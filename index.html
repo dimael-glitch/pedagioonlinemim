@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Ofertas em Materiais de Construção | Cadastre-se e Receba</title>
+
+    <meta name="description" content="Receba ofertas exclusivas em materiais de construção. Cadastre-se gratuitamente e fique por dentro das promoções disponíveis na sua região.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #0d47a1;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero-text h2 {
+            font-size: 2rem;
+            color: #ff6f00;
+            margin-bottom: 20px;
+        }
+
+        .hero-text ul {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .hero-text ul li {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .hero-text ul li::before {
+            content: "✔ ";
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .form-box {
+            background: #f7f7f7;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .form-box h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0d47a1;
+        }
+
+        form input, form button {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        form input {
+            border: 1px solid #ccc;
+        }
+
+        form input:focus {
+            outline: none;
+            border-color: #ff6f00;
+        }
+
+        form button {
+            background: #ff6f00;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background: #e65100;
+        }
+
+        .privacy {
+            font-size: 0.85rem;
+            color: #555;
+            text-align: center;
+        }
+
+        .benefits {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .benefits h2 {
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            background: #0d47a1;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ofertas em Materiais de Construção</h1>
+    <p>Cadastre-se gratuitamente e receba promoções disponíveis na sua região</p>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Receba Ofertas Direto no WhatsApp ou E-mail</h2>
+            <ul>
+                <li>Promoções reais e por tempo limitado</li>
+                <li>Materiais para obra e reforma</li>
+                <li>Condições especiais de pagamento</li>
+                <li>Sem custo para se cadastrar</li>
+            </ul>
+            <p><strong>Preencha o formulário</strong> para receber comunicações promocionais.</p>
+        </div>
+
+        <div class="form-box">
+            <h3>Cadastro de Ofertas</h3>
+
+            <form id="leadForm">
+                <input type="text" name="name" placeholder="Nome completo" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="tel" name="phone" placeholder="WhatsApp" required>
+
+                <button type="submit">Receber Ofertas Agora</button>
+            </form>
+
+            <p class="privacy">
+                Ao se cadastrar, você concorda com o recebimento de comunicações promocionais.
+                Consulte nossa <a href="#">Política de Privacidade</a>.
+            </p>
+
+            <p id="successMessage" style="display:none; color:green; text-align:center;">
+                Cadastro realizado com sucesso.
+            </p>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>Vantagens do Cadastro</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Ofertas Exclusivas</h3>
+                <p>Receba promoções que não estão disponíveis para o público geral.</p>
+            </div>
+            <div class="card">
+                <h3>Facilidade</h3>
+                <p>Receba as ofertas diretamente no WhatsApp ou e-mail.</p>
+            </div>
+            <div class="card">
+                <h3>Transparência</h3>
+                <p>Sem compromisso de compra e sem custos.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2026 — Todos os direitos reservados |
+    <a href="#">Política de Privacidade</a>
+</footer>
+
+<script>
+    const form = document.getElementById('leadForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        successMessage.style.display = 'block';
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
